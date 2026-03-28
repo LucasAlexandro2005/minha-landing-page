@@ -1,0 +1,513 @@
+/* =============================================
+   ESTILOS GLOBAIS E RESET
+   ============================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações base do corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+    background-image: url('fogo\ gourmet.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* =============================================
+   CABEÇALHO E NAVEGAÇÃO
+   ============================================= */
+header {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Menu de navegação horizontal */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Links de navegação com efeitos */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+}
+
+/* Efeito hover nos links do menu */
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+}
+
+/* =============================================
+   SEÇÕES PRINCIPAIS
+   ============================================= */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* =============================================
+   SEÇÃO HOME
+   ============================================= */
+#Home {
+    margin-top: 80px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.9), rgba(247, 147, 30, 0.9));
+    color: white;
+    border-radius: 20px;
+    padding: 6rem 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+}
+
+/* Imagem principal da home */
+#Home img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 2rem auto;
+    display: block;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Título principal com animação */
+#Home h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
+/* Texto de introdução com animação */
+#Home p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 1s ease 0.2s;
+    animation-fill-mode: both;
+}
+
+/* =============================================
+   ESTILOS DE TÍTULOS E PARÁGRAFOS
+   ============================================= */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: black;
+    text-align: center;
+    
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =============================================
+   SEÇÃO CARDÁPIO
+   ============================================= */
+#Cardapio {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 4rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Grid responsivo para os itens do cardápio */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Cards individuais dos hambúrgueres */
+.menu-item {
+    background: linear-gradient(135deg, #fff, #f9f9f9);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Imagens dos hambúrgueres no cardápio */
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de zoom nas imagens ao passar o mouse */
+.menu-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Efeito hover nos cards do cardápio */
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    border-color: #ff6b35;
+}
+
+/* Títulos dos hambúrgueres */
+.menu-item h3 {
+    color: #ff6b35;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Preços dos hambúrgueres */
+.menu-item .price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #f7931e;
+    margin: 1rem 0;
+}
+
+/* Descrição dos hambúrgueres */
+.menu-item .description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Lista de ingredientes */
+.menu-item .ingredients {
+    color: #888;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* =============================================
+   SEÇÃO SOBRE
+   ============================================= */
+#Sobre {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 4rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* =============================================
+   SEÇÃO CONTATO
+   ============================================= */
+#Contato {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 4rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Grid para informações de contato */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Items individuais de contato */
+.contact-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Labels das informações de contato */
+.contact-item strong {
+    color: #ff6b35;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Link do WhatsApp com cor personalizada */
+.whatsapp-link {
+    color: #25D366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover no link do WhatsApp */
+.whatsapp-link:hover {
+    color: #128C7E;
+    text-decoration: underline;
+}
+
+/* =============================================
+   BOTÃO PRINCIPAL (CTA)
+   ============================================= */
+.cta-button {
+    background: white;
+    color: #ff6b35;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Efeito hover no botão principal */
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    background: #f8f8f8;
+}
+
+/* =============================================
+   BOTÃO WHATSAPP FLUTUANTE
+   ============================================= */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+/* Botão circular do WhatsApp */
+.whatsapp-float a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+/* Efeito hover no botão flutuante */
+.whatsapp-float a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Ícone do WhatsApp no botão flutuante */
+.whatsapp-icon {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+    vertical-align: middle;
+}
+
+/* Ícone pequeno do WhatsApp na seção contato */
+.whatsapp-small-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* =============================================
+   SEÇÃO LOCALIZAÇÃO
+   ============================================= */
+#Localizacao {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 4rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+/* Mapa do Google integrado */
+#Localizacao iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 15px;
+    margin: 2rem auto 0;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* =============================================
+   ANIMAÇÕES
+   ============================================= */
+/* Animação de pulso para o botão WhatsApp */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+/* Animação de entrada para elementos */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================================
+   RESPONSIVIDADE - DISPOSITIVOS MÓVEIS
+   ============================================= */
+@media (max-width: 768px) {
+    /* Menu vertical em mobile */
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    /* Títulos menores em mobile */
+    #Home h2 {
+        font-size: 2.5rem;
+    }
+    
+    /* Imagem principal menor em mobile */
+    #Home img {
+        max-width: 300px;
+    }
+    
+    /* Espaçamento reduzido nas seções */
+    section {
+        padding: 2rem 1rem;
+        margin: 1rem auto;
+    }
+    
+    /* Grid de cardápio com 2 colunas em mobile */
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    /* Imagens dos hambúrgueres ajustadas */
+    .menu-item img {
+        height: 180px;
+    }
+    
+    /* Cards menores em mobile */
+    .menu-item {
+        padding: 1.5rem;
+    }
+    
+    /* Informações de contato em coluna */
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Botão WhatsApp menor em mobile */
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-float a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    .whatsapp-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .whatsapp-small-icon {
+        width: 18px;
+        height: 18px;
+    }
+    
+    /* Mapa menor em mobile */
+    #Localizacao iframe {
+        height: 300px;
+    }
+    
+    /* Ajustes nos títulos */
+    h2 {
+        font-size: 2rem;
+    }
+    
+    /* Ajustes nos textos */
+    p {
+        font-size: 1rem;
+    }
+    
+    /* Preços menores */
+    .menu-item .price {
+        font-size: 1.1rem;
+    }
+    
+    /* Títulos dos hambúrgueres */
+    .menu-item h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* =============================================
+   RESPONSIVIDADE - TABLETS
+   ============================================= */
+@media (max-width: 1024px) and (min-width: 769px) {
+    /* Grid com 2 colunas em tablets */
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    /* Ajustes finos para tablets */
+    section {
+        padding: 3rem 1.5rem;
+    }
+    
+    .menu-item img {
+        height: 190px;
+    }
+}

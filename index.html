@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#Home">Inicio</a></li>
+            <li><a href="#Cardapio">Cardapio</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Contato">Contato</a></li>
+            <li><a href="#Localizacao">Localização</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <section id="Home">
+        <h2>Bem-vindo à Hamburgueria Sabor & Arte</h2>
+        <img src="/delicious-gourmet-burger-with-fresh-ingredients-on-a-dark-background-photo.jpeg" alt="hamburger">
+        <p>Os melhores hambúrgueres artesanais da cidade, feitos com amor e ingredientes selecionados!</p>
+        <button class="cta-button" onclick="fazerPedido()">Faça seu Pedido</button>
+    </section>
+    <section id="Sobre">
+        <h2>Sobre</h2>
+        <p>Nossa Hamburgueria foi fundada em 2023 com o objetivo de oferecer os melhores hambúrgueres da região.</p>
+    </section>
+
+    <section id="Cardapio">
+        <h2>Nosso Cardápio</h2>
+        <p>Aqui você encontrará uma variedade de hambúrgueres deliciosos, feitos com ingredientes frescos e de alta qualidade.</p>
+
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="hamburguer.jpg" alt="hamburguer classico">
+                <h3>Hambúrguer Clássico</h3>
+                <div class="price">R$ 18,90</div>
+                <div class="description">O tradicional hambúrguer que todos amam</div>
+                <div class="ingredients">Pão brioche, hambúrguer 180g, queijo cheddar, alface, tomate, cebola, molho especial</div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="x bacon.jpg" alt="x bacon">
+                <h3>X-Bacon</h3>
+                <div class="price">R$ 22,90</div>
+                <div class="description">Para os amantes de bacon</div>
+                <div class="ingredients">Pão brioche, hambúrguer 180g, queijo cheddar, bacon crocante, alface, tomate, molho especial</div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="X burguer duplo.jpg" alt="x burguer duplo">
+                <h3>X-Burger Duplo</h3>
+                <div class="price">R$ 26,90</div>
+                <div class="description">Dobre o sabor com dois hambúrgueres</div>
+                <div class="ingredients">Pão brioche, 2 hambúrgueres 180g, queijo cheddar duplo, alface, tomate, cebola, molho especial</div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="Hamburguer BBQ.jpg" alt="hamburguer bbq">
+                <h3>Hambúrguer BBQ</h3>
+                <div class="price">R$ 24,90</div>
+                <div class="description">Sóbrio e defumado</div>
+                <div class="ingredients">Pão brioche, hambúrguer 180g, queijo cheddar, cebola caramelizada, bacon, molho BBQ</div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="Veggie Burguer.jpg" alt="veggie burguer">
+                <h3>Veggie Burger</h3>
+                <div class="price">R$ 21,90</div>
+                <div class="description">Opção deliciosa para vegetarianos</div>
+                <div class="ingredients">Pão integral, hambúrguer de grão-de-bico, queijo vegano, alface, tomate, cebola roxa, molho de ervas</div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="Hamburguer Picante.jpg" alt="hamburguer picante">
+                <h3>Hambúrguer Picante</h3>
+                <div class="price">R$ 23,90</div>
+                <div class="description">Para quem gosta de um toque apimentado</div>
+                <div class="ingredients">Pão brioche, hambúrguer 180g, queijo pepper jack, jalapeños, cebola, picles, molho picante</div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="cheese salada.jpg" alt="cheese salada">
+                <h3>Cheese Salada</h3>
+                <div class="price">R$ 19,90</div>
+                <div class="description">Leve e refrescante</div>
+                <div class="ingredients">Pão brioche, hambúrguer 180g, queijo cheddar, alface, tomate, cenoura ralada, maionese</div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="Hamburguer premium.jpg" alt="hamburguer premium">
+                <h3>Hambúrguer Premium</h3>
+                <div class="price">R$ 32,90</div>
+                <div class="description">Nossa joia da coroa</div>
+                <div class="ingredients">Pão australiano, hambúrguer 200g (blend especial), queijo gorgonzola, cogumelos, rúcula, tomate seco, molho trufado</div>
+            </div>
+        </div>
+    </section>
+    <section id="Contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco e faça seu pedido!</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>📞 Telefone</strong>
+                <span>(11) 1234-5678</span>
+            </div>
+            <div class="contact-item">
+                <strong>📧 Email</strong>
+                <span>contato@hamburgueria.com</span>
+            </div>
+            <div class="contact-item">
+                <strong>📍 Endereço</strong>
+                <span>Rua das Delícias, 123 - Centro, São Paulo - SP</span>
+            </div>
+            <div class="contact-item">
+                <strong>🕐 Horário</strong>
+                <span>Seg-Sex: 11h-23h | Sáb-Dom: 12h-24h</span>
+            </div>
+            <div class="contact-item">
+                <strong><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-small-icon"> WhatsApp</strong>
+                <span><a href="https://wa.me/551112345678?text=Olá! Gostaria de fazer um pedido." target="_blank" class="whatsapp-link">Faça seu pedido pelo WhatsApp</a></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Botão WhatsApp Flutuante -->
+     
+    <div class="whatsapp-float">
+        
+        <a href="https://wa.me/551112345678?text=Olá! Gostaria de fazer um pedido." target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+    </div>
+    
+    <script>
+        function fazerPedido() {
+            const mensagem = encodeURIComponent("Olá! Gostaria de fazer um pedido. Poderiam me enviar o cardápio atualizado?");
+            const numeroWhatsApp = "551112345678";
+            const url = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
+
+<section id="Localizacao">
+    <h2>Localização</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0934567890123!2d-46.63330748502994!3d-23.55051998468148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584ae31a3a6f%3A0x10e8f1a3d5a3a3a6!2sRua%20das%20Del%C3%ADcias%2C%20123%20-%20Centro%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
